@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="row">
+            <div class="-">
+                <form method="post" class="card-body">
+                    <!-- ----DATOS ALUMNO---- -->
+                    <section class="row mb-5">
+                        <h3 class="card-header">Datos de alumno</h3>
+                        <hr>
+                        <input type="hidden" name="id" value="29">
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <span for="nombre" class="form-label" id="basic-addon2">Apellido y Nombre:</span>
+                                <input type="text" name="nombre" id="nombre" value="Pinardi juan jose" required=""
+                                    class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col ">
+                                <label for="sexo" class="form-label">Sexo :</label>
+                                <select class="form-select" aria-label="readonly" name="sexo" id="sexo" required="">
+                                    <option value="M" selected="">
+                                        Masculino</option>
+                                    <option value="F">Femenino
+                                    </option>
+                                    <option value="O">Otro</option>
+                                </select>
+                            </div>
+                            <div class="col ">
+                                <span for="dni" class="form-label" id="basic-addon2">Dni:</span>
+                                <input type="number" name="dni" id="dni" value="45308233" required=""
+                                    class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2" disabled>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <span for="fecha_nacimiento" class="form-label" id="basic-addon2">Fecha de Nacimiento
+                                    :</span>
+                                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" value="2004-07-26"
+                                    required="" class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                            <div class="col">
+                                <span for="cuil" class="form-label" id="basic-addon2">Cuil</span>
+                                <input type="number" name="cuil" id="cuil" value="0" required="" class="form-control"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <span for="nacionalidad" class="form-label" id="basic-addon2">Nacionalidad</span>
+                                <input type="text" name="nacionalidad" id="nacionalidad" value="Argentina" required=""
+                                    class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                            <div class="col">
+                                <span for="lugar_nacimiento" class="form-label" id="basic-addon2">Lugar de Nacimiento
+                                    :</span>
+                                <input type="text" name="lugar_nacimiento" id="lugar_nacimiento" value="Bs sas."
+                                    required="" class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <span for="domicilio" class="form-label" id="basic-addon2">Domicilio :</span>
+                                <input type="text" name="domicilio" id="domicilio" value="Jose hernandez 3520"
+                                    required="" class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+
+
+                            <div class="col">
+                                <span for="localidad" class="form-label" id="basic-addon2">Localidad :</span>
+                                <input type="text" name="localidad" id="localidad" value="Tortuguitas" required=""
+                                    class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- -----------FAMILIA--------- -->
+                    <section class="bg-light row mb-5">
+                        <h3 class="card-header">Escuela de Procedencia / Hermanos en la Escuela</h3>
+                        <hr>
+                        <div class="row mb-5">
+                            <div class="col">
+                                <span for="procede" class="form-label" id="basic-addon2">Escuela de Procedencia</span>
+                                <input type="text" name="procede" id="procede" value="0" required=""
+                                    class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                            <div class="col">
+                                <span class="form-label" id="basic-addon2">Cantidad de hermanos</span>
+                                <input type="number" name="hermanos" id="hermanos" value="1" required=""
+                                    class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+
+                        <h3 class="card-header">Datos de Padre/Madre/Tutor</h3>
+                        <hr>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <span for="nombre_padre" class="form-label" id="basic-addon2">Apellido y Nombre</span>
+                                <input type="text" name="nombre_padre" id="nombre_padre" value="Pinardi juan jose"
+                                    required="" class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <span for="dni_padre" class="form-label" id="basic-addon2">Dni</span>
+                                <input type="number" name="dni_padre" id="dni_padre" value="24175955" required=""
+                                    class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+
+                            <div class="col">
+                                <span for="nacionalidad_padre" class="form-label" id="basic-addon2">Nacionalidad</span>
+                                <input type="text" name="nacionalidad_padre" id="nacionalidad_padre" value="Argentino"
+                                    required="" class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <span for="tel_padre" class="form-label" id="basic-addon2">Telefono</span>
+                                <input type="number" name="tel_padre" id="tel_padre" value="1127327647" required=""
+                                    class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                            <div class="col">
+                                <span for="ocupacion_padre" class="form-label" id="basic-addon2">Ocupacion</span>
+                                <input type="text" name="ocupacion_padre" id="ocupacion_padre" value="Jefe de empresa"
+                                    required="" class="form-control" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- -----------DATOS INSTITUCIONALES--------- -->
+                    <section class="row mb-5" bg-body-secondary">
+                        <div class="row">
+                            <h3 class="card-header">Datos Institucionales :</h3>
+                            <hr>
+                            <div class="row mb-3">
+                                <div class="col-md-7">
+                                    <label for="modalidad" class="form-label">Modalidad :</label>
+                                    <select class="form-select" aria-label="Default select example" name="modalidad"
+                                        id="modalidad" required="">
+                                        <option value="T-CICLO BASICO">
+                                            T-CICLO BASICO</option>
+                                        <option value="T-TECNICO EN TECNOLOGIA DE LOS ALIMENTOS">
+                                            T-TECNICO EN TECNOLOGIA DE LOS ALIMENTOS</option>
+
+                                        <option value="T-TECNICO EN INFORMATICA PERSONAL Y PROFESIONAL" selected="">
+                                            T-TECNICO EN
+                                            INFORMATICA PERSONAL Y PROFESIONAL</option>
+
+                                        <option value="S-CICLO BASICO">S-CICLO BASICO</option>
+
+                                        <option value="S-ECONOMIA y GESTION">S-ECONOMIA y GESTION</option>
+
+                                        <option value="S-CIENCIA SOCIALES">S-CIENCIA SOCIALES</option>
+
+
+                                        <option value="S-ARTE - TEATRO">S-ARTE - TEATRO</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-1">
+                                    <label for="curso" class="form-label">Curso</label>
+                                    <select class="form-select" aria-label="Default select example" name="curso"
+                                        id="curso" required="">
+                                        <option value="1_1" class="text-center">1_1</option>
+                                        <option value="1_2" class="text-center">1_2</option>
+                                        <option value="1_3" class="text-center">1_3</option>
+                                        <option value="1_4" class="text-center">1_4</option>
+                                        <option value="1_5" class="text-center">1_5</option>
+                                        <option value="1_6" class="text-center">1_6</option>
+                                        <option value="2_1" class="text-center">2_1</option>
+                                        <option value="2_2" class="text-center">2_2</option>
+                                        <option value="2_3" class="text-center">2_3</option>
+                                        <option value="2_4" class="text-center">2_4</option>
+                                        <option value="2_5" class="text-center">2_5</option>
+                                        <option value="2_6" class="text-center">2_6</option>
+                                        <option value="3_1" class="text-center">3_1</option>
+                                        <option value="3_2" class="text-center">3_2</option>
+                                        <option value="3_3" class="text-center">3_3</option>
+                                        <option value="3_4" class="text-center">3_4</option>
+                                        <option value="3_5" class="text-center">3_5</option>
+                                        <option value="3_6" class="text-center">3_6</option>
+                                        <option value="4_1" class="text-center">4_1</option>
+                                        <option value="4_2" class="text-center">4_2</option>
+                                        <option value="4_3" class="text-center">4_3</option>
+                                        <option value="4_4" class="text-center">4_4</option>
+                                        <option value="4_5" class="text-center">4_5</option>
+                                        <option value="4_6" class="text-center">4_6</option>
+                                        <option value="5_1" class="text-center">5_1</option>
+                                        <option value="5_2" class="text-center">5_2</option>
+                                        <option value="5_3" class="text-center">5_3</option>
+                                        <option value="5_4" class="text-center">5_4</option>
+                                        <option value="5_5" class="text-center">5_5</option>
+                                        <option value="5_6" class="text-center">5_6</option>
+                                        <option value="6_1" class="text-center">6_1</option>
+                                        <option value="6_2" class="text-center">6_2</option>
+                                        <option value="6_3" class="text-center">6_3</option>
+                                        <option value="6_4" class="text-center">6_4</option>
+                                        <option value="6_5" class="text-center">6_5</option>
+                                        <option value="6_6" class="text-center">6_6</option>
+                                        <option value="7_1" class="text-center" selected="">7_1</option>
+                                        <option value="7_2" class="text-center">7_2</option>
+                                        <option value="7_3" class="text-center">7_3</option>
+                                    </select>
+                                </div>
+
+                                <div class="col">
+                                    <label for="turno" class="form-label">Turno :</label>
+                                    <select class="form-select" aria-label="Default select example" name="turno"
+                                        id="turno" required="">
+                                        <option value="M">
+                                            Mañana</option>
+                                        <option value="T">Tarde
+                                        </option>
+                                        <option value="V" selected="">Vespertino</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-1">
+                                    <label for="ciclo" class="form-label">Ciclo :</label>
+                                    <select class="form-select" aria-label="Default select example" name="ciclo"
+                                        id="ciclo" required="">
+                                        <option value="2023" selected="">
+                                            2023</option>
+                                        <option value="2024">2024
+                                        </option>
+                                        <option value="2025">2025</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <span for="libro_mat" class="form-label" id="basic-addon2">N° Libro Matriz :</span>
+                                    <input type="text" name="libro_mat" id="libro_mat" value="0" required=""
+                                        class="form-control text-center" aria-label="Recipient's username"
+                                        aria-describedby="basic-addon2">
+                                </div>
+                                <div class="col-md-3">
+                                    <span for="folio_mat" class="form-label" id="basic-addon2">N° Folio Matriz :</span>
+                                    <input type="text" name="folio_mat" id="folio_mat" value="103" required=""
+                                        class="form-control text-center" aria-label="Recipient's username"
+                                        aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- ----COOPERADORA---- -->
+                    <section class="bg-body-light row mb-5">
+                        <h3 class="card-header" for="paga_cooperadora">Cooperadora</h3>
+                        <hr>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label class="form-label" for="inputGroupSelect01">Abona Cooperadora?</label>
+                                <select name="paga_cooperadora" id="paga_cooperadora" class="form-select"
+                                    aria-label="Default select example" required="">
+                                    <option value="no">No</option>
+                                    <option value="si">Sí</option>
+                                </select>
+
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label" for="inputGroupSelect01">Tipo Alumno</label>
+                                <select name="total_deuda" id="total_deuda" class="form-select"
+                                    aria-label="Default select example">
+                                    <option value="12000">1° Hermano</option>
+                                    <option value="6000">2° Hermano</option>
+                                    <option value="0">3° Hermano</option>
+
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="monto_cooperadora" class="form-label" id="basic-addon2">Total
+                                    Abonado</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="inputGroupPrepend">$</span>
+                                    <input type="number" name="monto_cooperadora" id="monto_cooperadora" min="1"
+                                        class="form-control" aria-label="Recipient's username"
+                                        aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <button type="button" class="offset-md-4 col-md-4 btn btn-outline-secondary"
+                                data-bs-toggle="modal" data-bs-target="#imprimir">
+                                Imprimir Comprobante
+                            </button>
+                        </div>
+                    </section>
+                    <hr><br>
+                    <!-- ----BOTONES DE ACCIÓN---- -->
+                    <div class="row bg-white dropup-center">
+                        <a href="https://allschool.com.ar/views/directivo/buscar-modificar.php"
+                            class="offset-md-2 col-md-3 btn btn-outline-secondary btn-ssm">
+                            Cancelar
+                        </a>
+                        <input type="submit" class="offset-md-2 col-md-3 btn btn-primary" name="submit"
+                            value="Guardar cambios">
+                    </div>
+                </form>
+
+                <!-- Imprimir -->
+                <div class="modal fade" id="imprimir" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Imprimir comprobante de cooperadora</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Está a punto de imprimir el comprobante de pago de <b>Pinardi, Juan José - 7°1°</b>
+                                <br>Fecha: 13-12-2023 | 13:04hs
+                                <br>Monto de $6000
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Imprimir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AVISO DE DATOS GUARDADOS -->
+
+                
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        let cancelarAccion = "https://allschool.com.ar/views/directivo/buscar-modificar.php"
+    </script>
+</body>
+
+</html>
